@@ -1,4 +1,170 @@
+html{
+	font-family: Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 1.4;
+	background-color: white;
+}
+
+div{
+	border: 1px solid blue;
+}
+
+header{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 31rem;
+	background-image: url("../images/glasses-bg.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+main{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-top: 3rem;
+	margin-bottom: 5rem;
+}
+
+footer{
+	border: 1px solid blueviolet;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
 .container{
 	min-width: 960px;
+	max-width: 960px;
 	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.bar{
+	height: 3rem;
+	width: 100%;
+	color: white;
+	display: flex;
+	align-items: center;
+	background-color: cadetblue;
+	margin-top: 1rem;
+	margin-bottom: 10rem;
+}
+
+.bar img{
+	height: 1.5rem;
+	margin-left: 2rem;
+	margin-right: 1rem;
+}
+
+nav{
+	margin-left: auto;
+}
+
+nav span{
+	margin-right: 2rem;
+}
+
+.banner{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	min-width: max-content;
+	margin-left: 22rem;
+	color: black;
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: white;
+}
+
+.banner h1{
+	margin: 1.5rem 5rem 1.5rem 5rem;
+}
+
+.services{
+	display: flex;
+	justify-content: center;
+}
+
+#principal{
+	align-items: center;
+}
+
+#exams, #fittings, #delivery{
+	width: 5rem;
+	height: 8rem;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.services h3{
+	text-align: center;
+	font-weight: bold;
+}
+
+div.image_container{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.services img{
+	width: 90%;
+	padding-bottom: 0.5rem;
+}
+
+#exams img{
+	width: 3.5rem;
+}
+
+.infos{
+	display: inline-flex;
+	margin-top: 3rem;
+}
+
+.infos h2{
+	color: white;
+	font-weight: bold;
+	width: 10rem;
+	padding-left: 1.25rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	background-color: cadetblue;
+	margin-bottom: 1rem;
+}
+
+#philosophy{
+	margin-right: 5%;
+}
+
+.infos div{
+	width: 35%;
+}
+
+#foot{
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: azure;
+}
+
+#foot img{
+	padding: 4rem 1rem 4rem 4rem;
+	height: 1.5rem;
+	border: 1px solid red;
+}
+
+#copyright{
+	color: black;
 }

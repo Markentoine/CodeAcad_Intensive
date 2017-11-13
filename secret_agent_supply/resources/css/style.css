@@ -4,10 +4,6 @@ html{
 	font-family: Helvetica, sans-serif;
 }
 
-div{
-	border: 1px solid black;
-}
-
 .top{
 	display: flex;
 	justify-content: center;
@@ -19,6 +15,7 @@ div{
 	display: inline-flex;
 	justify-content: space-between;
 	width: 960px;
+	flex-basis: 960px;
 }
 
 .logo{
@@ -87,6 +84,10 @@ nav span{
 	margin-bottom: 0.75rem;
 }
 
+div#simple_menu{
+	display : none;
+}
+
 .all_products{
 	display: flex;
 	justify-content: center;
@@ -109,25 +110,21 @@ div.image{
 	height: 9rem;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
-	overflow: hidden;
 }
 
 .image img#pen{
 	height: 80%;
 	max-width: auto;
-	border: 1px solid red;
 }
 
 .image img#watch{
 	height: 100%;
 	max-width: auto;
-	border: 1px solid red;
 }
 
 .image img#glasses{
 	height: 60%;
 	max-width: auto;
-	border: 1px solid red;
 }
 
 .product h3{
@@ -161,6 +158,10 @@ div.info{
 	background-color: black;
 }
 
+.info p{
+	padding: 1rem 0rem 1rem 0rem;
+}
+
 footer{
 	display: flex;
 	justify-content: center;
@@ -168,4 +169,76 @@ footer{
 	height: 5rem;
 	color: white;
 	background-color: black;
+}
+
+@media only screen and (max-width: 1024px){
+	div.product{
+		min-width: 47%;
+		background-color: red;
+	}
+
+	#glasses{
+		display: none;
+	}
+
+	div#full_menu{
+		display: none;
+	}
+
+	div#simple_menu{
+		display: block;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 470px){
+
+	span#banner{
+		display: none;
+	}
+
+	div.product{
+		min-width: 90%;
+		background-color: blue;
+	}
+
+	#glasses{
+		display: none;
+	}
+
+	#watch{
+		display: none;
+	}
+
+	div#full_menu{
+		display: none;
+	}
+
+	div.container{
+		justify-content: center;
+	}
+
+	div#simple_menu{
+		display: block;
+		text-align: center;
+
+	}
+
+	#display_info{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	div.info{
+		width: 90%;
+	}
+
+	header{
+		align-items: flex-end;
+	}
+
+	div.new{
+		width: 100%;
+	}
 }
